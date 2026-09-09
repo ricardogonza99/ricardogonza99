@@ -1,172 +1,174 @@
 <div align="center">
 
-<sub>BOOT SEQUENCE COMPLETE · COLOMBIA · BACKEND ENGINEERING</sub>
+<img src="assets/backend-dungeon.png" alt="Backend Dungeon: Ricardo, un mago con laptop, frente a un portal violeta en una mazmorra pixel art" width="100%" />
 
-Ricardo Gonzalez
+<br />
 
-Convierto reglas de negocio en código que mueve comercio.
+**UN CHECKOUT HA FALLADO. TU AVENTURA COMIENZA.**
 
-Magento 2 Backend Developer · PHP · Salesforce Developer
+<sub>Un jugador. Demasiados módulos. Ninguna pista en el frontend.</sub>
 
-<p>
-  <img alt="Magento 2" src="https://img.shields.io/badge/MAGENTO_2-FF6B35?style=for-the-badge&amp;logo=magento&amp;logoColor=white" />
-  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&amp;logo=php&amp;logoColor=white" />
-  <img alt="Salesforce" src="https://img.shields.io/badge/SALESFORCE-00A1E0?style=for-the-badge&amp;logo=salesforce&amp;logoColor=white" />
-  <img alt="GraphQL" src="https://img.shields.io/badge/GRAPHQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" />
-</p>
+<br /><br />
 
-Iniciar conversación · Cargar perfil · Explorar módulos · Ver changelog
-
-<sub>Mi parte favorita de una tienda no se ve: es lo que hace que funcione.</sub>
+[ ▶ NUEVA PARTIDA ](#-player-one) · [ 🎒 INVENTARIO ](#-inventario) · [ 👾 BESTIARIO ](#-bestiario) · [ 💬 CO-OP ](#-campamento)
 
 </div>
 
-01 / $ whoami
+---
 
-Soy Ingeniero de Sistemas con más de 4 años de experiencia en e-commerce, desarrollando sobre Magento 2.3/2.4 y PHP 7/8. Trabajo donde se encuentran el código, las integraciones y las necesidades reales del negocio: módulos, pagos, flujos comerciales, APIs y rendimiento.
+## 🧙 PLAYER ONE
 
-También tengo cerca de un año de experiencia paralela en Salesforce, construyendo con Apex, tareas programadas, objetos y campos personalizados, Flow y Lightning Web Components.
+**Ricardo** · Backend Mage · Servidor: Colombia
 
-<?php
+Construyo cosas con **PHP y Magento**. A veces cruzo el portal a **Salesforce**.  
+Mi hábitat está entre una regla de negocio que parecía sencilla y el módulo que demuestra lo contrario.
 
-declare(strict_types=1);
+> «Sí, ya limpié la caché. No, no era eso.»
 
-namespace Ricardo\Profile;
+```yaml
+character:
+  name: Ricardo
+  class: Backend Mage
+  main_world: Magento
+  expansion: Salesforce
+  alignment: chaotic_debug
+  respawn_point: último commit estable
+  final_boss: "En mi local funciona"
+```
 
-final class Developer
-{
-    public const ROLE = 'Backend Developer';
-    public const BASE = 'Colombia';
+## 🎒 INVENTARIO
 
-    public function stack(): array
-    {
-        return [
-            'core'       => ['Magento 2', 'PHP', 'MySQL'],
-            'interfaces' => ['APIs', 'GraphQL', 'XML'],
-            'crm'        => ['Salesforce', 'Apex', 'Flow', 'LWC'],
-            'toolkit'    => ['Git', 'Docker', 'Composer', 'Postman'],
-        ];
-    }
-
-    public function mindset(): string
-    {
-        return 'Entender el negocio. Resolver el problema. Cuidar el sistema.';
-    }
-}
-
-02 / $ loaded-modules
-
-Módulo
-
-Qué construyo y resuelvo
-
-Commerce_Core
-
-Módulos personalizados en Magento, extensiones y adaptación de flujos de negocio.
-
-Payment_Flows
-
-Desarrollo y personalización de métodos de pago para necesidades de comercio electrónico.
-
-Integration_Bridge
-
-Creación y consumo de APIs y microservicios, integraciones y trabajo con GraphQL.
-
-Platform_Health
-
-Optimización de rendimiento y caché, parches, seguridad y mantenimiento preventivo y correctivo.
-
-Salesforce_Extensions
-
-Clases Apex, tareas programadas, objetos, campos, automatizaciones con Flow y componentes LWC.
-
-El checkout es la parte visible. Detrás están las reglas, los datos y las integraciones que deben ponerse de acuerdo.
-
-03 / $ toolbox --expand
+| Slot | Objeto equipado | Lore |
+| :--- | :--- | :--- |
+| ⚔️ Arma principal | **PHP** | Convierte reglas de negocio en hechizos ejecutables. |
+| 🛡️ Armadura pesada | **Magento 2** | Gran poder. Muchas piezas. Algunas están en XML. |
+| 🌀 Portal | **APIs · GraphQL** | Conecta reinos que no hablan el mismo idioma. |
+| ☁️ Grimorio secundario | **Apex · Flow · LWC** | Magia aprendida al otro lado del portal Salesforce. |
+| 🗝️ Llave del calabozo | **SQL · MySQL** | El dato existe. La pregunta es en qué tabla. |
+| 🎒 Mochila dimensional | **Docker · Composer** | Lleva el entorno. Invoca las dependencias. |
+| ⏳ Cristal de guardado | **Git** | Porque hasta los magos necesitan volver atrás. |
 
 <details>
-<summary><strong>🧩 Backend & datos</strong> — el motor</summary>
+<summary>🧪 Inspeccionar objeto desconocido</summary>
 
-Magento 2.3 / 2.4 · PHP 7 / 8 · SQL · MySQL · APIs · GraphQL · XML · Composer
+### Poción de invalidación de caché
 
-Desarrollo de módulos, modelos de datos, personalización de flujos e integración de servicios para plataformas de comercio electrónico.
+**Descripción:** promete revelar tus cambios.  
+**Efecto secundario:** puedes empezar a usarla sin saber qué estás invalidando.
+
+*El mercader no acepta devoluciones. El bug sí vuelve.*
+
+</details>
+
+## 👾 BESTIARIO
+
+<sub>Haz clic en un enemigo para iniciar el encuentro.</sub>
+
+<details>
+<summary>👻 EL CRON FANTASMA · «Pero estaba programado…»</summary>
+
+**Habilidad:** no aparecer cuando más lo necesitas.  
+**Loot falso:** «Seguro se ejecuta en el próximo minuto».
+
+**Movimiento del mago:** seguir las huellas en los logs y revisar la ejecución antes de invocar otro cron.
+
+> No estaba muerto. Estaba pendiente.
 
 </details>
 
 <details>
-<summary><strong>☁️ Salesforce</strong> — el módulo complementario</summary>
+<summary>🕷️ EL BUG INTERMITENTE · Solo aparece cuando nadie está mirando</summary>
 
-Apex · Tareas programadas · Objetos y campos personalizados · Salesforce Flow · Lightning Web Components
+**Habilidad:** desaparecer durante la demostración.  
+**Resistencia:** capturas de pantalla sin contexto.
 
-Experiencia paralela al desarrollo en Magento, aportando lógica, automatización y componentes dentro del ecosistema Salesforce.
+**Movimiento del mago:** reunir condiciones, entradas y evidencia hasta convertir «a veces» en una secuencia reproducible.
+
+> Has equipado: paciencia. El enemigo ha equipado: concurrencia.
 
 </details>
 
 <details>
-<summary><strong>🛠️ Entorno de trabajo</strong> — las herramientas del taller</summary>
+<summary>🧟 LA CACHÉ MALDITA · Conserva recuerdos de una versión anterior</summary>
 
-Docker · Git · Bitbucket · GitHub · GitLab · Postman · Jira · PhpStorm · VS Code
+**Habilidad:** hacerte dudar de tu propio commit.  
+**Frase de combate:** «Ese texto ya lo cambié».
 
-Trabajo con equipos multidisciplinarios, control de versiones, diagnóstico de incidencias y mantenimiento de plataformas. También utilizo HTML y JavaScript cuando la solución requiere ajustes en la interfaz.
+**Movimiento del mago:** descubrir qué capa sirve la respuesta y qué debería invalidarla.
+
+> Limpiar todo es un hechizo. Entender por qué vuelve es la misión.
 
 </details>
-
-04 / $ career --changelog
-
-2024.01 → presente · Omni.pro
-
-Magento 2 Backend Developer / Salesforce Developer
-
-Desarrollo de módulos, páginas, métodos de pago y flujos en Magento 2.4. Integraciones, GraphQL, optimización de caché y rendimiento, y resolución de incidencias. Desarrollo paralelo en Salesforce con Apex, Flow y LWC.
-
-2023.02 → 2023.11 · Summa Solutions
-
-Magento 2 Backend Developer
-
-Personalización de módulos y flujos con Magento 2.4 y PHP 8. Integración de APIs y extensiones, optimización de rendimiento, parches y mantenimiento de seguridad.
-
-2021.11 → 2023.02 · Omni.pro
-
-Magento 2 Backend Developer
-
-Desarrollo de módulos en Magento 2.3 y PHP 7. Creación y consumo de microservicios, integraciones y modelos de datos para e-commerce.
 
 <details>
-<summary><strong>Ver el commit inicial: soporte de TI + formación</strong></summary>
+<summary>🐉 LA EXTENSIÓN ANCESTRAL · Boss de varias fases</summary>
 
-Nestlé · Soporte de TI · abril 2020 – febrero 2021
-Instalación de sistemas operativos, mantenimiento de equipos, copias de seguridad de servidores y soporte presencial a usuarios.
+**Fase 1:** instalar.  
+**Fase 2:** configurar.  
+**Fase 3:** descubrir la personalización que nadie documentó.  
+**Fase secreta:** otra extensión modifica el mismo comportamiento.
 
-Formación
+**Movimiento del mago:** rastrear el flujo y localizar el punto de conflicto antes de lanzar una nueva sobrescritura.
 
-Ingeniería de Sistemas — Universidad del Valle, 2022.
-
-Tecnología en Sistemas — Universidad del Valle, 2020.
-
-Técnico en Sistemas — SENA, 2017.
+> El verdadero boss eran las dependencias que hicimos por el camino.
 
 </details>
 
-05 / $ commerce --field-notes
+## 📜 TABLÓN DE MISIONES
 
-He participado en proyectos para Terpel Colombia · Capris · Tía Ecuador · CCN, trabajando con equipos multidisciplinarios en soluciones de comercio electrónico.
+**Elige una ruta.** Son territorios de código, no una lista de logros desbloqueados.
 
-No todo el trabajo vive en un repositorio público. Parte de mi experiencia está en plataformas de clientes: módulos, integraciones, mantenimiento y flujos que acompañan su operación.
+- **⚒️ La forja de módulos** — darle forma a una regla de negocio sin convertirla en una maldición.
+- **🌉 El puente entre reinos** — hacer que APIs, datos y sistemas se entiendan.
+- **💎 El checkout perdido** — seguir el recorrido del pago hasta encontrar dónde se rompe la aventura.
+- **☁️ Las islas de Salesforce** — explorar automatizaciones, Apex y componentes.
 
-06 / $ connection --open
+<sub>Los repositorios públicos del perfil son las puertas de entrada. No todos los cofres contienen proyectos terminados; algunos contienen preguntas interesantes.</sub>
 
-¿Tu equipo necesita desarrollar módulos, integrar servicios o resolver un flujo de negocio en Magento? ¿Hay una oportunidad donde pueda aportar desde backend y Salesforce?
+## 🔥 CAMPAMENTO
 
-Hablemos de qué necesita hacer el sistema y qué le impide hacerlo hoy.
+Llegaste a la zona segura. Aquí se habla de código, ideas y bugs difíciles.
 
+<details>
+<summary>💬 Hablar con Ricardo</summary>
 
+**Viajero:** ¿A qué te dedicas por estos reinos?  
+**Ricardo:** Backend, módulos e integraciones. Principalmente Magento; también Salesforce.
 
-Español: nativo · Inglés: básico
+**Viajero:** Tengo un problema raro.  
+**Ricardo:** Perfecto. Empecemos por qué esperabas que pasara y qué pasó realmente.
+
+**Viajero:** ¿Y si quiero proponer algo?  
+**Ricardo:** [Abre el canal de comunicación](mailto:richar018990@hotmail.com).
+
+</details>
+
+<details>
+<summary>🚪 No abrir. Definitivamente no hay un easter egg aquí.</summary>
+
+### Has encontrado la sala secreta.
+
+```diff
+- Era un cambio de cinco minutos.
++ Se ha desbloqueado una nueva región del mapa.
+```
+
+**Objeto obtenido:** un ticket con mejor contexto.  
+**Rareza:** legendaria.
+
+</details>
+
+<br />
 
 <div align="center">
 
-return $businessNeeds->toWorkingSoftware();
+**[ ✉️ INVITAR A CO-OP ](mailto:richar018990@hotmail.com)**
 
-<sub>Fin del README. Inicio de la conversación.</sub>
+<br />
+
+*No hay bugs pequeños.*  
+*Solo bosses que todavía no han mostrado su segunda fase.*
+
+<sub>SAVE POINT REACHED · Puedes cerrar esta pestaña. La aventura continúa.</sub>
 
 </div>
